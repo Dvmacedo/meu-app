@@ -11,6 +11,9 @@ export default function MinhasRotas() {
             <Route path="/" element={<Home />} />
             <Route path="/Semana1" element={<Semana1 />} />
             <Route path="/Semana2" element={<Semana2 />} />
+            <Route path="/Semana3" element={<Semana3 />} />
+            <Route path="/Semana4" element={<Semana4 />} />
+            <Route path="/Semana5" element={<Semana5 />} />
         </Routes>
         </BrowserRouter>
     );

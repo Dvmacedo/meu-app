@@ -1,0 +1,49 @@
+/* Letreiro.css */
+
+/* Estilo para o contêiner do letreiro */
+.letreiro-container {
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para o texto do título "Letreiro" */
+  .letreiro-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Estilo para o texto em digitação */
+  .letreiro-texto {
+    font-size: 28px;
+    font-family: 'Courier New', monospace;
+    margin-top: 10px;
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Oculta o texto que excede a largura */
+    border-right: 2px solid #333; /* Efeito de cursor de digitação */
+    animation: typing 1s steps(20, end), blink-caret 0.5s step-end infinite;
+  }
+  
+  /* Animação de digitação do texto */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Animação do cursor piscando */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #333;
+    }
+  }  

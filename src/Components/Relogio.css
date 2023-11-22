@@ -1,0 +1,29 @@
+/* Relogio.css */
+
+/* Estilo para o contêiner do relógio */
+.relogio-container {
+    text-align: center;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo para o texto do título "Relógio" */
+  .relogio-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Estilo para o texto da hora atual */
+  .relogio-time {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  /* Estilo para o texto dos minutos e segundos */
+  .relogio-minutes-seconds {
+    font-size: 18px;
+    color: #888;
+  }  

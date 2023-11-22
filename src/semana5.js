@@ -1,12 +1,12 @@
-import {Contador} from './Components/Contador';
+import {Jogo} from './Components/Jogo';
 import Gallery from './Components/Gallery';
 import { Link } from 'react-router-dom';
 
-export default function Semana2() {
+export default function Semana5() {
     return (
         <>
-        <h1>Atividade 02</h1>
-        <Contador />
+        <h1>Atividade 05</h1>
+        <Jogo />
         <Gallery />
         <br />
         <Link to="/">retornar a página inicial</Link>
