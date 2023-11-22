@@ -2,24 +2,31 @@ import React, { useState, useEffect } from 'react';
 import './Relogio.css';
 
 function Relogio() {
-    const [data, setData] = useState(new Date());
+  const [hora, setHora] = useState(new Date());
 
-    useEffect(() => {
-        const timerID = setInterval(() => tick(), 1000);
-        return function cleanup() {
-            clearInterval(timerID);
-        };
-    });
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHora(new Date());
+    }, 1000); 
 
-    function tick() {
-        setData(new Date());
-    }
+    return () => clearInterval(interval);
+  }, []);
 
-    return (
-        <div>
-            <h2>São {data.toLocaleTimeString()}.</h2>
-        </div>
-    );
+  const minutos = hora.getMinutes();
+  const segundos = hora.getSeconds();
+  const horaAtual = hora.getHours();
+
+  return (
+    <div className="relogio-container">
+      <h2 className="relogio-title">Relógio</h2>
+      <p className="relogio-time">
+        {hora.toLocaleTimeString()} 
+      </p>
+      <p className="relogio-hour-minutes-seconds">
+      {horaAtual} hora(s), {minutos} minutos, {segundos} segundos
+      </p>
+    </div>
+  );
 }
 
 export default Relogio;
