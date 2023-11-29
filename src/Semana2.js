@@ -1,4 +1,4 @@
-import {Contador} from './Components/Contador';
+import Contador from './Components/Contador';
 import Gallery from './Components/Gallery';
 import { Link } from 'react-router-dom';
 
