@@ -12,20 +12,20 @@ function Letreiro() {
         setTextoExibido(texto.substring(0, indice));
         setIndice((indiceAnterior) => {
           if (indiceAnterior === texto.length) {
-            return 0; // Reinicia o loop quando o texto for totalmente digitado
+            return 0;
           }
           return indiceAnterior + 1;
         });
       }
-    }, 100); // A cada 100ms, uma nova letra será exibida.
+    }, 100);
 
     return () => clearInterval(timer);
   }, [indice, texto]);
 
   return (
-    <div>
-      <h2>Letreiro</h2>
-      <p>{textoExibido}</p>
+    <div className="letreiro-container">
+      <h2 className="letreiro-title">Letreiro</h2>
+      <p className="letreiro-texto">{textoExibido}</p>
     </div>
   );
 }
