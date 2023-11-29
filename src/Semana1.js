@@ -1,5 +1,5 @@
-import {Relogio} from './Components/Relogio';
-import {Letreiro} from './Components/Letreiro';
+import Relogio from './Components/Relogio';
+import Letreiro from './Components/Letreiro';
 import Gallery from './Components/Gallery';
 import { Link } from 'react-router-dom';
 

@@ -1,4 +1,4 @@
-import {Jogo} from './Components/Jogo';
+import Jogo from './Components/Jogo';
 import Gallery from './Components/Gallery';
 import { Link } from 'react-router-dom';
 

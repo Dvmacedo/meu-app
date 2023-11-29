@@ -1,4 +1,4 @@
-import {Calculadora} from './Components/Calculadora';
+import Calculadora from './Components/Calculadora';
 import Gallery from './Components/Gallery';
 import { Link } from 'react-router-dom';
 
