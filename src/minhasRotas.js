@@ -3,6 +3,9 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Home";
 import Semana1 from "./Semana1";
 import Semana2 from "./Semana2";
+import Semana3 from "./Semana3";
+import Semana4 from "./Semana4";
+import Semana5 from "./Semana5";
 
 export default function MinhasRotas() {
     return (
