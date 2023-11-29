@@ -1,4 +1,4 @@
-import {Relogio} from './Components/Relogio';
+import Relogio from './Components/Relogio';
 import Gallery from './Components/Gallery';
 import { Link } from 'react-router-dom';
 
